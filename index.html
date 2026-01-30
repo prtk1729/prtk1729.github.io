@@ -1,128 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Prateek Pani - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
 <body id="page-top">
 
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">Prateek Pani</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive">
+        <a class="navbar-brand" href="#page-top">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
             Menu <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#vision-language">Vision–Language</a></li>
                 <li class="nav-item"><a class="nav-link" href="#cv-projects">Computer Vision</a></li>
                 <li class="nav-item"><a class="nav-link" href="#rag-agents">RAG & Agents</a></li>
-                <li class="nav-item"><a class="nav-link" href="#stt-tts">STT / TTS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#c-projects">C / Systems</a></li>
+                <li class="nav-item"><a class="nav-link" href="#systems">C / Systems</a></li>
                 <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- ================= HOME ================= -->
+<!-- ================= HERO ================= -->
 <header class="masthead">
     <div class="container d-flex h-100 align-items-center justify-content-center">
         <div class="text-center">
-            <h1 class="text-uppercase">Prateek Pani</h1>
-            <h2 class="text-white-50 mt-4">AI for the Greater Good</h2>
+            <h1 class="mx-auto my-0 text-uppercase">Prateek</h1>
+            <h1 class="mx-auto my-0 text-uppercase">Pani</h1>
+            <h2 class="text-white-50 mt-4">AI for the greater good</h2>
+            <a class="btn btn-primary mt-4" href="#about">View my work</a>
         </div>
     </div>
 </header>
 
+<!-- ================= ABOUT ================= -->
+<section class="projects-section bg-light" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <img class="img-fluid" src="assets/img/prateek.jpeg" alt="..." />
+            </div>
+            <div class="col-lg-8">
+                <h4>Machine Learning Developer</h4>
+                <p class="text-black-50">
+                    Alumni @ IIIT-Hyderabad, Machine Learning Lab.  
+                    Specialized in multi-modal AI systems, computer vision, LLMs, and model optimization.  
+                    Industry experience at Qualcomm and Nykaa.  
+                    Research work funded by UK MRC.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ================= VISION LANGUAGE ================= -->
 <section class="projects-section bg-light" id="vision-language">
-    <div class="container">
+    <div class="container px-4 px-lg-5">
         <h2 class="text-center mb-5">Vision–Language Projects</h2>
-        <div class="bg-black text-center p-4">
-            <h4 class="text-white">Paligemma Multi-Modal System</h4>
-            <p class="text-white-50">
-                Vision encoder + LLM integration built from scratch.
-            </p>
+
+        <!-- Paligemma -->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/paligemma_arch.png" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="project-text my-auto">
+                        <h4 class="text-white">Paligemma Multi-Modal System</h4>
+                        <ul class="text-white-50">
+                            <li>Contrastive Vision Encoder</li>
+                            <li>Gemma Language Model</li>
+                            <li>Linear Projector</li>
+                        </ul>
+                        <a href="https://github.com/prtk1729/Paligemma-MultiModal-System">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ================= COMPUTER VISION ================= -->
 <section class="projects-section bg-light" id="cv-projects">
-    <div class="container">
+    <div class="container px-4 px-lg-5">
         <h2 class="text-center mb-5">Computer Vision Projects</h2>
-        <div class="bg-black text-center p-4">
-            <h4 class="text-white">Sensor Fusion & 3D Object Detection</h4>
-            <p class="text-white-50">
-                LiDAR + Camera fusion, point clouds, 3D bounding boxes.
-            </p>
+
+        <!-- Sensor Fusion -->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="Visual Fusion.nosync/Sensor_Fusion.gif" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="project-text my-auto">
+                        <h4 class="text-white">Sensor Fusion & 3D Object Detection</h4>
+                        <a href="https://github.com/prtk1729/Sensor_Fusion_Paper">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SegFormer -->
+        <div class="row gx-0 justify-content-center mt-5">
+            <div class="col-lg-6"><img class="img-fluid" src="./SemanticSegmentation.nosync/segformer_mit_b3_last_stage_last_stage_demoVideo copy.gif" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="project-text my-auto">
+                        <h4 class="text-white">SegFormer from Scratch</h4>
+                        <a href="https://github.com/prtk1729/SegFormer_from_Scratch">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ================= RAG & AGENTS ================= -->
 <section class="projects-section bg-light" id="rag-agents">
-    <div class="container">
+    <div class="container px-4 px-lg-5">
         <h2 class="text-center mb-5">RAG & Agentic Systems</h2>
-        <div class="bg-black text-center p-4">
-            <h4 class="text-white">GRPO Fine-Tuned LLM</h4>
-            <p class="text-white-50">
-                Reward models, verifiable reasoning, structured outputs.
-            </p>
+
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="RL/from_random_init_to_RL_with_Verfiable_Reward.png" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="project-text my-auto">
+                        <h4 class="text-white">GRPO Fine-Tuned LLM</h4>
+                        <a href="https://github.com/prtk1729/qwen3-math-reasoning-grpo">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ================= STT / TTS ================= -->
-<section class="projects-section bg-light" id="stt-tts">
-    <div class="container">
-        <h2 class="text-center mb-5">Speech (STT / TTS)</h2>
-        <div class="bg-black text-center p-4">
-            <h4 class="text-white">Speech Pipeline</h4>
-            <p class="text-white-50">
-                ASR, alignment, neural TTS (planned).
-            </p>
-        </div>
-    </div>
-</section>
+<!-- ================= SYSTEMS ================= -->
+<section class="projects-section bg-light" id="systems">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mb-5">C / Systems / GPU</h2>
 
-<!-- ================= C / SYSTEMS ================= -->
-<section class="projects-section bg-light" id="c-projects">
-    <div class="container">
-        <h2 class="text-center mb-5">C / Systems Projects</h2>
-        <div class="bg-black text-center p-4">
-            <h4 class="text-white">Compiler & LLVM Work</h4>
-            <p class="text-white-50">
-                Parsing, IR generation, low-level systems tooling.
-            </p>
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/triton.png" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="project-text my-auto">
+                        <h4 class="text-white">GPU Kernels with Triton</h4>
+                        <a href="https://github.com/prtk1729/gpu-kernel-programming-triton">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ================= RESEARCH ================= -->
 <section class="projects-section bg-light" id="research">
-    <div class="container">
+    <div class="container px-4 px-lg-5">
         <h2 class="text-center mb-5">Research & Publications</h2>
-        <div class="bg-black text-center p-4">
+        <div class="bg-black p-4 text-center">
             <h4 class="text-white">Domain Adaptation in Ophthalmology</h4>
             <p class="text-white-50">
-                UK MRC-funded work, real-world clinical deployment.
+                UK Medical Research Council funded research on retinal disease diagnosis.
             </p>
         </div>
     </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="signup-section bg-black" id="contact">
+<section class="signup-section bg-black" id="signup">
     <div class="container text-center">
-        <h2 class="text-white mb-4">Get in Touch</h2>
+        <h2 class="text-white">Get in Touch</h2>
         <p class="text-white-50">Email · GitHub · LinkedIn</p>
     </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer bg-black small text-center text-white-50">
-    <div class="container">© Prateek Pani</div>
+    <div class="container">© Prateek Pani 2024</div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
+</html>

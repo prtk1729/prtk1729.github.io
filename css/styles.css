@@ -11578,3 +11578,16 @@ header.masthead {
     }
 }
 
+/* =====================================================
+   ABOUT SECTION TEXT FIX
+   ===================================================== */
+
+/* Headings in About */
+#about h4 {
+    color: #f2f2f2;
+}
+
+/* Paragraph text was using text-black-50 */
+#about .text-black-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}

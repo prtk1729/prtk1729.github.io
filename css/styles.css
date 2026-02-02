@@ -12005,3 +12005,32 @@ header.masthead .text-center::before {
 body {
     position: relative;
 }
+
+
+
+/* =====================================================
+   NAVBAR: REMOVE UNDERLINE & ACTIVE INDICATOR
+   ===================================================== */
+
+/* Remove underline pseudo-element completely */
+#mainNav .nav-link::after,
+#mainNav .nav-link.active::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Normalize active state (no highlight) */
+#mainNav .nav-link.active {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Optional: subtle hover feedback only */
+#mainNav .nav-link:hover {
+    color: #7fcfc3 !important;
+}
+
+/* Ensure consistent font styling */
+#mainNav .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}

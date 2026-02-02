@@ -12002,3 +12002,6 @@ header.masthead .text-center::before {
     background-color: #7fcfc3;
     transform: translateX(-50%);
 }
+body {
+    position: relative;
+}

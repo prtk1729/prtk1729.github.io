@@ -11628,3 +11628,13 @@ html, body {
 .bg-light {
     background-color: #0b0b0b !important;
 }
+
+
+/* =====================================================
+   HERO SPACING FIX
+   ===================================================== */
+
+header.masthead {
+    padding-top: 6rem !important;   /* reduce gap */
+    padding-bottom: 4rem !important;
+}

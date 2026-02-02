@@ -11986,3 +11986,19 @@ header.masthead .text-center::before {
 #mainNav .nav-link {
     letter-spacing: 0.06em;
 }
+
+
+#mainNav .nav-link.active {
+    color: #7fcfc3 !important;
+}
+
+#mainNav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 18px;
+    height: 2px;
+    background-color: #7fcfc3;
+    transform: translateX(-50%);
+}

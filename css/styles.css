@@ -11201,3 +11201,64 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+
+/* =====================================================
+   BUTTON POLISH – subtle hover animation
+   ===================================================== */
+
+.btn-outline-light {
+    transition: all 0.25s ease;
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #ffffff;
+}
+
+/* Icon inside buttons */
+.btn i {
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   DARK MODE / PROJECT CARD CONTRAST TUNING
+   ===================================================== */
+
+.bg-black.project,
+.bg-black .project-text {
+    background-color: #0e0e0e !important;
+}
+
+.project-text .text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.project-text h4 {
+    letter-spacing: 0.4px;
+}
+
+/* Improve button contrast on dark cards */
+.project-text .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* =====================================================
+   PROJECT CARD HOVER (very subtle, premium feel)
+   ===================================================== */
+
+.project {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}

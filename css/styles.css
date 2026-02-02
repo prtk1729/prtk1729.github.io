@@ -642,7 +642,6 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
-  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -2221,7 +2220,6 @@ textarea.form-control-lg {
   text-align: right;
 }
 .form-check-reverse .form-check-input {
-  float: right;
   margin-right: -1.5em;
   margin-left: 0;
 }
@@ -2319,7 +2317,6 @@ textarea.form-control-lg {
 }
 
 .btn-check {
-  position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
@@ -2429,7 +2426,6 @@ textarea.form-control-lg {
   line-height: 1.25;
 }
 .form-floating > label {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -2598,7 +2594,6 @@ textarea.form-control-lg {
 }
 
 .valid-tooltip {
-  position: absolute;
   top: 100%;
   z-index: 5;
   display: none;
@@ -2688,7 +2683,6 @@ textarea.form-control-lg {
 }
 
 .invalid-tooltip {
-  position: absolute;
   top: 100%;
   z-index: 5;
   display: none;
@@ -3313,7 +3307,6 @@ textarea.form-control-lg {
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
-  position: absolute;
   z-index: var(--bs-dropdown-zindex);
   display: none;
   min-width: var(--bs-dropdown-min-width);
@@ -3937,8 +3930,7 @@ textarea.form-control-lg {
     flex-direction: row;
   }
   .navbar-expand-sm .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
+    }
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -3984,8 +3976,7 @@ textarea.form-control-lg {
     flex-direction: row;
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
+    }
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -4031,8 +4022,7 @@ textarea.form-control-lg {
     flex-direction: row;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
+    }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -4078,8 +4068,7 @@ textarea.form-control-lg {
     flex-direction: row;
   }
   .navbar-expand-xl .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
+    }
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -4125,8 +4114,7 @@ textarea.form-control-lg {
     flex-direction: row;
   }
   .navbar-expand-xxl .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
+    }
   .navbar-expand-xxl .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -4171,7 +4159,6 @@ textarea.form-control-lg {
   flex-direction: row;
 }
 .navbar-expand .navbar-nav .dropdown-menu {
-  position: absolute;
 }
 .navbar-expand .navbar-nav .nav-link {
   padding-right: var(--bs-navbar-nav-link-padding-x);
@@ -4333,7 +4320,6 @@ textarea.form-control-lg {
 }
 
 .card-img-overlay {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -4460,7 +4446,6 @@ textarea.form-control-lg {
   flex-shrink: 0;
   width: var(--bs-accordion-btn-icon-width);
   height: var(--bs-accordion-btn-icon-width);
-  margin-left: auto;
   content: "";
   background-image: var(--bs-accordion-btn-icon);
   background-repeat: no-repeat;
@@ -4720,7 +4705,6 @@ textarea.form-control-lg {
   padding-right: 3rem;
 }
 .alert-dismissible .btn-close {
-  position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
@@ -5318,7 +5302,6 @@ textarea.form-control-lg {
 
 .toast-container {
   --bs-toast-zindex: 1090;
-  position: absolute;
   z-index: var(--bs-toast-zindex);
   width: -moz-max-content;
   width: max-content;
@@ -5506,8 +5489,7 @@ textarea.form-control-lg {
   .modal-dialog {
     max-width: var(--bs-modal-width);
     margin-right: auto;
-    margin-left: auto;
-  }
+    }
   .modal-sm {
     --bs-modal-width: 300px;
   }
@@ -5686,7 +5668,6 @@ textarea.form-control-lg {
   height: var(--bs-tooltip-arrow-height);
 }
 .tooltip .tooltip-arrow::before {
-  position: absolute;
   content: "";
   border-color: transparent;
   border-style: solid;
@@ -5796,7 +5777,6 @@ textarea.form-control-lg {
   height: var(--bs-popover-arrow-height);
 }
 .popover .popover-arrow::before, .popover .popover-arrow::after {
-  position: absolute;
   display: block;
   content: "";
   border-color: transparent;
@@ -5853,7 +5833,6 @@ textarea.form-control-lg {
   border-bottom-color: var(--bs-popover-bg);
 }
 .bs-popover-bottom .popover-header::before, .bs-popover-auto[data-popper-placement^=bottom] .popover-header::before {
-  position: absolute;
   top: 0;
   left: 50%;
   display: block;
@@ -5978,7 +5957,6 @@ textarea.form-control-lg {
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -6044,7 +6022,6 @@ textarea.form-control-lg {
 }
 
 .carousel-indicators {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
@@ -6085,7 +6062,6 @@ textarea.form-control-lg {
 }
 
 .carousel-caption {
-  position: absolute;
   right: 15%;
   bottom: 1.25rem;
   left: 15%;
@@ -6902,7 +6878,6 @@ textarea.form-control-lg {
   content: "";
 }
 .ratio > * {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -7041,7 +7016,6 @@ textarea.form-control-lg {
 }
 
 .stretched-link::after {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -11278,8 +11252,7 @@ body {
 
 header.masthead::before {
     content: "";
-    position: absolute;
-    inset: 0;
+      inset: 0;
     background: rgba(0, 0, 0, 0.45); /* subtle dark overlay */
     z-index: 0;
 }
@@ -11339,3 +11312,305 @@ header.masthead .btn-primary:hover {
 
 
 
+/* =====================================================
+   GLOBAL DARK THEME
+   ===================================================== */
+
+html, body {
+    background-color: #0b0b0b;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Kill Bootstrap bg-light everywhere */
+.bg-light {
+    background-color: #0b0b0b !important;
+}
+
+
+/* =====================================================
+   NAVBAR UNIFORMITY (HOME vs rest)
+   ===================================================== */
+
+.navbar-brand {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Match hover behavior */
+.navbar-brand:hover {
+    color: #7fcfc3 !important;
+}
+
+/* =====================================================
+   HERO SPACING FIX
+   ===================================================== */
+
+header.masthead {
+    padding-top: 6rem !important;   /* reduce gap */
+    padding-bottom: 4rem !important;
+}
+
+/* =====================================================
+   HERO TITLE READABILITY
+   ===================================================== */
+
+header.masthead h1 {
+    color: #f2f2f2;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* =====================================================
+   PORTFOLIO DARK THEME OVERRIDES
+   (Overrides Bootstrap / Grayscale defaults)
+   ===================================================== */
+
+/* ---- Global color system ---- */
+:root {
+  --bs-body-bg: #0b0b0b;
+  --bs-body-color: rgba(255, 255, 255, 0.85);
+
+  --bs-dark: #0e0e0e;
+  --bs-light: #0b0b0b;
+
+  --bs-link-color: #7fcfc3;
+  --bs-link-hover-color: #9adfd6;
+}
+
+/* ---- Base page ---- */
+html, body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Kill any light sections */
+.bg-light {
+  background-color: #0b0b0b !important;
+}
+
+/* =====================================================
+   NAVBAR (fix HOME + contrast)
+   ===================================================== */
+
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand,
+#mainNav .nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#mainNav .nav-link:hover,
+.navbar-brand:hover {
+  color: #7fcfc3 !important;
+}
+
+/* =====================================================
+   HERO SECTION (spacing + contrast)
+   ===================================================== */
+
+header.masthead {
+  padding-top: 5.5rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+/* Dark overlay */
+header.masthead::before {
+  content: "";
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+header.masthead > .container {
+  position: relative;
+  z-index: 1;
+}
+
+header.masthead h1 {
+  color: #f2f2f2;
+  letter-spacing: 0.25em;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+header.masthead h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.btn-primary {
+  background-color: #6bbfb2;
+  border-color: #6bbfb2;
+  color: #0b0b0b;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #7fcfc3;
+  border-color: #7fcfc3;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+/* =====================================================
+   PROJECT CARDS
+   ===================================================== */
+
+.project {
+  background-color: #0e0e0e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.65);
+}
+
+.project-text .text-white-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* =====================================================
+   CONTACT ICONS
+   ===================================================== */
+
+#signup a i {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+#signup a:hover i {
+  transform: translateY(-2px);
+  color: #7fcfc3;
+}
+
+/* =====================================================
+   FINAL NAVBAR + HERO POLISH FIXES
+   ===================================================== */
+
+/* ---------- 1. Fix HOME font, case, and size ---------- */
+
+.navbar-brand {
+    font-family: var(--bs-body-font-family) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.navbar-brand:hover {
+    color: #7fcfc3 !important;
+}
+
+/* ---------- 2. Align hero subtitle properly ---------- */
+
+header.masthead h2 {
+    margin-top: 1.25rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* ---------- 3. Give navbar breathing room from hero ---------- */
+
+header.masthead {
+    padding-top: 7rem !important;   /* creates clean gap */
+    padding-bottom: 4rem !important;
+}
+
+/* Desktop-only fine tuning */
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: 8rem !important;
+    }
+}
+
+/* =====================================================
+   ABOUT SECTION TEXT FIX
+   ===================================================== */
+
+/* Headings in About */
+#about h4 {
+    color: #f2f2f2;
+}
+
+/* Paragraph text was using text-black-50 */
+#about .text-black-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* force white text */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* darkness level */
+  z-index: 1;
+}
+
+/* bring text above overlay */
+.hero * {
+  position: relative;
+  z-index: 2;
+}

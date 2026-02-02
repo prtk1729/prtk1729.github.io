@@ -11638,3 +11638,148 @@ header.masthead {
     padding-top: 6rem !important;   /* reduce gap */
     padding-bottom: 4rem !important;
 }
+
+
+/* =====================================================
+   PORTFOLIO DARK THEME OVERRIDES
+   (Overrides Bootstrap / Grayscale defaults)
+   ===================================================== */
+
+/* ---- Global color system ---- */
+:root {
+  --bs-body-bg: #0b0b0b;
+  --bs-body-color: rgba(255, 255, 255, 0.85);
+
+  --bs-dark: #0e0e0e;
+  --bs-light: #0b0b0b;
+
+  --bs-link-color: #7fcfc3;
+  --bs-link-hover-color: #9adfd6;
+}
+
+/* ---- Base page ---- */
+html, body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Kill any light sections */
+.bg-light {
+  background-color: #0b0b0b !important;
+}
+
+/* =====================================================
+   NAVBAR (fix HOME + contrast)
+   ===================================================== */
+
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand,
+#mainNav .nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#mainNav .nav-link:hover,
+.navbar-brand:hover {
+  color: #7fcfc3 !important;
+}
+
+/* =====================================================
+   HERO SECTION (spacing + contrast)
+   ===================================================== */
+
+header.masthead {
+  padding-top: 5.5rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+/* Dark overlay */
+header.masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+header.masthead > .container {
+  position: relative;
+  z-index: 1;
+}
+
+header.masthead h1 {
+  color: #f2f2f2;
+  letter-spacing: 0.25em;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+header.masthead h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.btn-primary {
+  background-color: #6bbfb2;
+  border-color: #6bbfb2;
+  color: #0b0b0b;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #7fcfc3;
+  border-color: #7fcfc3;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+/* =====================================================
+   PROJECT CARDS
+   ===================================================== */
+
+.project {
+  background-color: #0e0e0e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.65);
+}
+
+.project-text .text-white-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* =====================================================
+   CONTACT ICONS
+   ===================================================== */
+
+#signup a i {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+#signup a:hover i {
+  transform: translateY(-2px);
+  color: #7fcfc3;
+}

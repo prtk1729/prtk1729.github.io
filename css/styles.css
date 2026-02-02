@@ -11262,3 +11262,77 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
 }
+
+
+/* ================= NAVBAR TYPOGRAPHY FIX ================= */
+
+/* Make "Home" same visual weight as nav links */
+.navbar-brand {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* ================= HERO CONTRAST ================= */
+
+header.masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* subtle dark overlay */
+    z-index: 0;
+}
+
+header.masthead > .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Hero title */
+header.masthead h1 {
+    color: #f5f5f5;
+    letter-spacing: 0.25em;
+}
+
+/* Tagline */
+header.masthead h2 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================= NAVBAR COLORS ================= */
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+#mainNav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+
+#mainNav .nav-link:hover {
+    color: #7fcfc3; /* muted teal accent */
+}
+
+#mainNav .nav-link.active {
+    color: #ffffff;
+}
+
+/* ================= HERO BUTTON ================= */
+
+header.masthead .btn-primary {
+    background-color: #6bbfb2;
+    border-color: #6bbfb2;
+    color: #0e0e0e;
+    font-weight: 600;
+}
+
+header.masthead .btn-primary:hover {
+    background-color: #7fcfc3;
+    border-color: #7fcfc3;
+}

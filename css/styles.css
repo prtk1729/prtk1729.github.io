@@ -11785,16 +11785,6 @@ header.masthead h2 {
 }
 
 
-/* =====================================================
-   FORCE CENTER ALIGNMENT FOR ALL SECTIONS
-   ===================================================== */
-
-.projects-section,
-.signup-section,
-header.masthead {
-    display: flex;
-    justify-content: center;
-}
 
 .projects-section > .container,
 .signup-section > .container,
@@ -11824,3 +11814,122 @@ html, body {
     }
 }
 
+/* =====================================================
+   FINAL BOOTSTRAP-SAFE ALIGNMENT FIX
+   ===================================================== */
+
+/* Global dark theme */
+html, body {
+    background-color: #0b0b0b;
+    color: rgba(255, 255, 255, 0.85);
+    overflow-x: hidden;
+}
+
+/* Remove light backgrounds */
+.bg-light {
+    background-color: #0b0b0b !important;
+}
+
+/* ---------------- NAVBAR ---------------- */
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+}
+
+#mainNav .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#mainNav .nav-link:hover {
+    color: #7fcfc3 !important;
+}
+
+/* ---------------- HERO ---------------- */
+header.masthead {
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+header.masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+header.masthead > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    margin-top: 1.75rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------------- SECTIONS ---------------- */
+.projects-section,
+.signup-section {
+    padding: 5rem 0;
+}
+
+/* ---------------- PROJECT CARDS ---------------- */
+.project {
+    background-color: #0e0e0e;
+}
+
+.project-text .text-white-50,
+#about .text-black-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Fix overlay overflow WITHOUT breaking layout */
+.project-text::before,
+#about .col-lg-8::before,
+header.masthead .text-center::before {
+    inset: 0;
+    border-radius: 0.75rem;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn-primary {
+    background-color: #6bbfb2;
+    border-color: #6bbfb2;
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #7fcfc3;
+    border-color: #7fcfc3;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.85);
+    transition: transform 0.25s ease;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------------- CONTACT ICONS ---------------- */
+#signup a i {
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+#signup a:hover i {
+    transform: translateY(-2px);
+    color: #7fcfc3;
+}

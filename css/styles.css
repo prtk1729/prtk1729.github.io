@@ -11796,3 +11796,31 @@ header.masthead {
     justify-content: center;
 }
 
+.projects-section > .container,
+.signup-section > .container,
+header.masthead > .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+}
+
+/* =====================================================
+   FIX OVERFLOW CAUSED BY READABILITY MASK
+   ===================================================== */
+
+.project-text::before,
+#about .col-lg-8::before,
+header.masthead .text-center::before {
+    inset: 0;                 /* REMOVE negative inset */
+    border-radius: 0.75rem;   /* keeps soft edges */
+}
+html, body {
+    overflow-x: hidden;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+

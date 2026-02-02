@@ -12035,4 +12035,32 @@ body {
     letter-spacing: 0.08em;
 }
 
+/* =====================================================
+   FORCE-REMOVE NAVBAR UNDERLINE (Grayscale override)
+   ===================================================== */
+
+/* Kill ALL underline pseudo-elements */
+#mainNav .nav-link::after,
+#mainNav .nav-link::before,
+#mainNav .nav-link.active::after,
+#mainNav .nav-link.active::before,
+#mainNav.navbar-shrink .nav-link::after,
+#mainNav.navbar-shrink .nav-link.active::after {
+    display: none !important;
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+}
+
+/* Neutralize active state styling */
+#mainNav .nav-link.active {
+    color: rgba(255, 255, 255, 0.85) !important;
+    background: none !important;
+}
+
+/* Optional hover only */
+#mainNav .nav-link:hover {
+    color: #7fcfc3 !important;
+}
 

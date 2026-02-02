@@ -11534,3 +11534,47 @@ header.masthead h2 {
   transform: translateY(-2px);
   color: #7fcfc3;
 }
+
+/* =====================================================
+   FINAL NAVBAR + HERO POLISH FIXES
+   ===================================================== */
+
+/* ---------- 1. Fix HOME font, case, and size ---------- */
+
+.navbar-brand {
+    font-family: var(--bs-body-font-family) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.navbar-brand:hover {
+    color: #7fcfc3 !important;
+}
+
+/* ---------- 2. Align hero subtitle properly ---------- */
+
+header.masthead h2 {
+    margin-top: 1.25rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* ---------- 3. Give navbar breathing room from hero ---------- */
+
+header.masthead {
+    padding-top: 7rem !important;   /* creates clean gap */
+    padding-bottom: 4rem !important;
+}
+
+/* Desktop-only fine tuning */
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: 8rem !important;
+    }
+}
+

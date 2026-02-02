@@ -11578,3 +11578,13 @@ header.masthead {
   margin: 0;
   padding: 0;
 }
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

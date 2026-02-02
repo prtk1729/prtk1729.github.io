@@ -11614,3 +11614,17 @@ header.masthead {
   position: relative;
   z-index: 2;
 }
+
+/* =====================================================
+   GLOBAL DARK THEME
+   ===================================================== */
+
+html, body {
+    background-color: #0b0b0b;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Kill Bootstrap bg-light everywhere */
+.bg-light {
+    background-color: #0b0b0b !important;
+}

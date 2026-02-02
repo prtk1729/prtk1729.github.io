@@ -24,6 +24,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#vision-language">Vision–Language</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image-video-generation">Image / Video Generation</a></li>
                 <li class="nav-item"><a class="nav-link" href="#cv-projects">Computer Vision</a></li>
                 <li class="nav-item"><a class="nav-link" href="#audio-dl">Audio Intelligence</a></li>
                 <li class="nav-item"><a class="nav-link" href="#rag-agents">RAG & Agents</a></li>
@@ -31,11 +32,9 @@
                 <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
                 <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
             </ul>
-
         </div>
     </div>
 </nav>
-
 
 <!-- ================= HERO ================= -->
 <header class="masthead">
@@ -54,14 +53,14 @@
     <div class="container px-4 px-lg-5">
         <div class="row align-items-center">
             <div class="col-lg-4">
-                <img class="img-fluid" src="assets/img/prateek.jpeg" alt="..." />
+                <img class="img-fluid" src="assets/img/prateek.jpeg" />
             </div>
             <div class="col-lg-8">
                 <h4>Machine Learning Developer</h4>
                 <p class="text-black-50">
-                    Alumni @ IIIT-Hyderabad, Machine Learning Lab.  
-                    Specialized in multi-modal AI systems, computer vision, LLMs, and model optimization.  
-                    Industry experience at Qualcomm and Nykaa.  
+                    Alumni @ IIIT-Hyderabad, Machine Learning Lab.<br />
+                    Specialized in multi-modal AI systems, computer vision, LLMs, and model optimization.<br />
+                    Industry experience at Qualcomm and Nykaa.<br />
                     Research work funded by UK MRC.
                 </p>
             </div>
@@ -72,9 +71,8 @@
 <!-- ================= SYSTEMS ================= -->
 <section class="projects-section bg-light" id="systems">
     <div class="container px-4 px-lg-5">
-        <h2 class="text-center mb-5">C / Systems / GPU</h2>
+        <h2 class="text-center mb-5">C / Embedded Systems / GPU</h2>
 
-        <!-- Triton Project -->
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6">
                 <img class="img-fluid" src="assets/img/triton.png" />
@@ -83,7 +81,9 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">GPU Kernels with Triton</h4>
-                        <a href="https://github.com/prtk1729/gpu-kernel-programming-triton" target="_blank">
+                        <a href="https://github.com/prtk1729/gpu-kernel-programming-triton"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
                             GitHub
                         </a>
                     </div>
@@ -91,37 +91,29 @@
             </div>
         </div>
 
-        <!-- FreeRTOS Bare-Metal Project -->
         <div class="row gx-0 justify-content-center mt-5">
             <div class="col-lg-6">
-                <!-- You can replace this with a diagram later -->
-                <img class="img-fluid" src="assets/img/embedded_systems.png" alt="FreeRTOS Bare-Metal ARM" />
+                <img class="img-fluid" src="assets/img/embedded_systems.png" />
             </div>
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">FreeRTOS ARM Bare-Metal Port</h4>
-
                         <p class="text-white-50">
                             Bare-metal boot and custom FreeRTOS kernel port for ARM Cortex-M,
-                            covering CPU bring-up, linker scripts, startup code, and minimal
-                            kernel integration.
+                            including CPU bring-up, linker scripts, startup code, and minimal RTOS integration.
                         </p>
-
-                        <a 
-                            href="https://github.com/prtk1729/freertos-arm-baremetal-port"
-                            target="_blank"
-                            class="btn btn-outline-light btn-sm">
+                        <a href="https://github.com/prtk1729/freertos-arm-baremetal-port"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
                             GitHub
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
 
 <!-- ================= VISION LANGUAGE ================= -->
 <section class="projects-section bg-light" id="vision-language">
@@ -141,7 +133,11 @@
                             <li>Gemma Language Model</li>
                             <li>Linear Projector</li>
                         </ul>
-                        <a href="https://github.com/prtk1729/Paligemma-MultiModal-System">GitHub</a>
+                        <a href="https://github.com/prtk1729/Paligemma-MultiModal-System"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -156,37 +152,27 @@
 
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6">
-                <!-- Replace with a generated image / grid if you add one later -->
-                <img class="img-fluid" src="assets/img/stable_diffusion_demo.png" alt="Stable Diffusion Output" />
+                <img class="img-fluid" src="assets/img/stable_diffusion_demo.png" />
             </div>
-
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">Stable Diffusion from Scratch</h4>
-
                         <p class="text-white-50">
-                            Implementation and experimentation with Stable Diffusion,
-                            covering latent diffusion, UNet denoising, text conditioning,
-                            and sampling strategies for high-quality image synthesis.
+                            From-scratch Stable Diffusion implementation covering latent diffusion,
+                            UNet denoising, text conditioning, and sampling-based synthesis.
                         </p>
-
-                        <div class="mt-3">
-                            <a 
-                                href="https://github.com/prtk1729/Stable_Diffusion"
-                                target="_blank"
-                                class="btn btn-outline-light btn-sm">
-                                GitHub
-                            </a>
-                        </div>
-
+                        <a href="https://github.com/prtk1729/Stable_Diffusion"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <!-- ================= COMPUTER VISION ================= -->
 <section class="projects-section bg-light" id="cv-projects">
@@ -201,7 +187,11 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">Sensor Fusion & 3D Object Detection</h4>
-                        <a href="https://github.com/prtk1729/Sensor_Fusion_Paper">GitHub</a>
+                        <a href="https://github.com/prtk1729/Sensor_Fusion_Paper"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -215,7 +205,11 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">SegFormer from Scratch</h4>
-                        <a href="https://github.com/prtk1729/SegFormer_from_Scratch">GitHub</a>
+                        <a href="https://github.com/prtk1729/SegFormer_from_Scratch"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -226,7 +220,6 @@
 <!-- ================= AUDIO INTELLIGENCE ================= -->
 <section class="projects-section bg-light" id="audio-dl">
     <div class="container px-4 px-lg-5">
-        
         <h2 class="text-center mb-5">Audio Intelligence</h2>
 
         <div class="row gx-0 justify-content-center">
@@ -237,34 +230,28 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">Speech-to-Text Transformer</h4>
-
                         <p class="text-white-50">
                             PyTorch-based Transformer ASR system with custom tokenization,
                             dataset handling, and experimental training infrastructure.
                         </p>
-
                         <div class="mt-3">
-                            <a 
-                                href="https://youtu.be/4YjCa9DnRaU"
-                                target="_blank"
-                                class="btn btn-outline-light btn-sm me-2">
+                            <a href="https://youtu.be/4YjCa9DnRaU"
+                               target="_blank"
+                               class="btn btn-outline-light btn-sm me-2">
                                 ▶ Demo
                             </a>
-
-                            <a 
-                                href="https://github.com/prtk1729/Speech2Text-Transformer"
-                                class="btn btn-outline-light btn-sm">
+                            <a href="https://github.com/prtk1729/Speech2Text-Transformer"
+                               target="_blank"
+                               class="btn btn-outline-light btn-sm">
                                 GitHub
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <!-- ================= RAG & AGENTS ================= -->
 <section class="projects-section bg-light" id="rag-agents">
@@ -279,28 +266,11 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="project-text my-auto">
                         <h4 class="text-white">GRPO Fine-Tuned LLM</h4>
-                        <a href="https://github.com/prtk1729/qwen3-math-reasoning-grpo">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= SYSTEMS ================= -->
-<section class="projects-section bg-light" id="systems">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mb-5">C / Systems / GPU</h2>
-
-        <div class="row gx-0 justify-content-center">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/triton.png" />
-            </div>
-            <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                    <div class="project-text my-auto">
-                        <h4 class="text-white">GPU Kernels with Triton</h4>
-                        <a href="https://github.com/prtk1729/gpu-kernel-programming-triton">GitHub</a>
+                        <a href="https://github.com/prtk1729/qwen3-math-reasoning-grpo"
+                           target="_blank"
+                           class="btn btn-outline-light btn-sm">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -325,26 +295,15 @@
 <section class="signup-section bg-black" id="signup">
     <div class="container text-center">
         <h2 class="text-white">Get in Touch</h2>
-
         <p class="text-white-50">
-            For collaborations, opportunities, or discussions, please email me at
-            <br />
-            <strong class="text-white">
-                prateek.pani4243@gmail.com
-            </strong>
-            <br /><br />
-            <a href="https://github.com/prtk1729" target="_blank" class="text-white-50">
-                GitHub
-            </a>
+            For collaborations, opportunities, or discussions, please email me at<br />
+            <strong class="text-white">prateek.pani4243@gmail.com</strong><br /><br />
+            <a href="https://github.com/prtk1729" target="_blank" class="text-white-50">GitHub</a>
             &nbsp;·&nbsp;
-            <a href="https://www.linkedin.com/in/prateekpani4243/" target="_blank" class="text-white-50">
-                LinkedIn
-            </a>
+            <a href="https://www.linkedin.com/in/prateekpani4243/" target="_blank" class="text-white-50">LinkedIn</a>
         </p>
     </div>
 </section>
-
-
 
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container">© Prateek Pani 2025</div>

@@ -11933,3 +11933,34 @@ header.masthead .text-center::before {
     transform: translateY(-2px);
     color: #7fcfc3;
 }
+
+
+/* =====================================================
+   KEEP NAVBAR DARK ON SCROLL (Grayscale override)
+   ===================================================== */
+
+/* Default navbar */
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* When scrolled (navbar-shrink is added by JS) */
+#mainNav.navbar-shrink {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Ensure text stays light */
+#mainNav.navbar-shrink .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+    color: #7fcfc3 !important;
+}
+
+/* Hamburger icon color */
+#mainNav.navbar-shrink .navbar-toggler {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+}

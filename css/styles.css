@@ -11964,3 +11964,25 @@ header.masthead .text-center::before {
     color: rgba(255, 255, 255, 0.8);
     border-color: rgba(255, 255, 255, 0.3);
 }
+
+/* =====================================================
+   NAVBAR DENSITY FIX (prevent pruning)
+   ===================================================== */
+
+/* Reduce font size slightly */
+#mainNav .nav-link {
+    font-size: 0.75rem;        /* was ~0.85rem */
+    line-height: 1.25;         /* tighter vertical fit */
+    padding: 0.5rem 0.75rem;   /* reduce horizontal + vertical padding */
+}
+
+/* Ensure multi-line items behave nicely */
+#mainNav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: slightly reduce letter spacing for long labels */
+#mainNav .nav-link {
+    letter-spacing: 0.06em;
+}
